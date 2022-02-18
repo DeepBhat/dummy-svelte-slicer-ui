@@ -1,0 +1,1 @@
+/home/adxx/emsdk/upstream/emscripten/em++   -O3 -DNDEBUG -Wall -static-libstdc++   @CMakeFiles/CuraEngine.dir/objects1.rsp  -o CuraEngine.js @CMakeFiles/CuraEngine.dir/linklibs.rsp

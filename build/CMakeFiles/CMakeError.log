@@ -1,0 +1,213 @@
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6321b/fast && /usr/bin/make -f CMakeFiles/cmTC_6321b.dir/build.make CMakeFiles/cmTC_6321b.dir/build
+make[1]: Entering directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6321b.dir/OpenMPTryFlag.c.o
+/home/adxx/emsdk/upstream/emscripten/emcc   -fopenmp=libomp -v   -o CMakeFiles/cmTC_6321b.dir/OpenMPTryFlag.c.o   -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+ "/home/adxx/emsdk/upstream/bin/clang" -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -fopenmp=libomp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -o CMakeFiles/cmTC_6321b.dir/OpenMPTryFlag.c.o
+clang version 14.0.0 (https://github.com/llvm/llvm-project 782c0dd1a1c235afb09a34e7da4a1267ead14765)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/adxx/emsdk/upstream/bin
+ (in-process)
+ "/home/adxx/emsdk/upstream/bin/clang-14" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -resource-dir /home/adxx/emsdk/upstream/lib/clang/14.0.0 -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=2 -D _LIBCPP_ABI_VERSION=2 -isysroot /home/adxx/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/adxx/emsdk/upstream/lib/clang/14.0.0/include -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -fdebug-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fvisibility default -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_6321b.dir/OpenMPTryFlag.c.o -x c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/SDL
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/adxx/emsdk/upstream/lib/clang/14.0.0/include
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+emcc: error: '/home/adxx/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -fopenmp=libomp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -o CMakeFiles/cmTC_6321b.dir/OpenMPTryFlag.c.o' failed (returned 1)
+make[1]: *** [CMakeFiles/cmTC_6321b.dir/build.make:66: CMakeFiles/cmTC_6321b.dir/OpenMPTryFlag.c.o] Error 1
+make[1]: Leaving directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6321b/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d9f16/fast && /usr/bin/make -f CMakeFiles/cmTC_d9f16.dir/build.make CMakeFiles/cmTC_d9f16.dir/build
+make[1]: Entering directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9f16.dir/OpenMPTryFlag.c.o
+/home/adxx/emsdk/upstream/emscripten/emcc   -fopenmp=libiomp5 -v   -o CMakeFiles/cmTC_d9f16.dir/OpenMPTryFlag.c.o   -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+ "/home/adxx/emsdk/upstream/bin/clang" -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -fopenmp=libiomp5 -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -o CMakeFiles/cmTC_d9f16.dir/OpenMPTryFlag.c.o
+clang version 14.0.0 (https://github.com/llvm/llvm-project 782c0dd1a1c235afb09a34e7da4a1267ead14765)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/adxx/emsdk/upstream/bin
+ (in-process)
+ "/home/adxx/emsdk/upstream/bin/clang-14" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -resource-dir /home/adxx/emsdk/upstream/lib/clang/14.0.0 -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=2 -D _LIBCPP_ABI_VERSION=2 -isysroot /home/adxx/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/adxx/emsdk/upstream/lib/clang/14.0.0/include -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -fdebug-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fvisibility default -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_d9f16.dir/OpenMPTryFlag.c.o -x c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/SDL
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/adxx/emsdk/upstream/lib/clang/14.0.0/include
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+emcc: error: '/home/adxx/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -fopenmp=libiomp5 -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -o CMakeFiles/cmTC_d9f16.dir/OpenMPTryFlag.c.o' failed (returned 1)
+make[1]: *** [CMakeFiles/cmTC_d9f16.dir/build.make:66: CMakeFiles/cmTC_d9f16.dir/OpenMPTryFlag.c.o] Error 1
+make[1]: Leaving directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d9f16/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0567f/fast && /usr/bin/make -f CMakeFiles/cmTC_0567f.dir/build.make CMakeFiles/cmTC_0567f.dir/build
+make[1]: Entering directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0567f.dir/OpenMPTryFlag.c.o
+/home/adxx/emsdk/upstream/emscripten/emcc   -fopenmp -v   -o CMakeFiles/cmTC_0567f.dir/OpenMPTryFlag.c.o   -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+ "/home/adxx/emsdk/upstream/bin/clang" -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -fopenmp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -o CMakeFiles/cmTC_0567f.dir/OpenMPTryFlag.c.o
+clang version 14.0.0 (https://github.com/llvm/llvm-project 782c0dd1a1c235afb09a34e7da4a1267ead14765)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/adxx/emsdk/upstream/bin
+ (in-process)
+ "/home/adxx/emsdk/upstream/bin/clang-14" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -resource-dir /home/adxx/emsdk/upstream/lib/clang/14.0.0 -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=2 -D _LIBCPP_ABI_VERSION=2 -isysroot /home/adxx/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/adxx/emsdk/upstream/lib/clang/14.0.0/include -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -fdebug-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fvisibility default -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_0567f.dir/OpenMPTryFlag.c.o -x c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/SDL
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/adxx/emsdk/upstream/lib/clang/14.0.0/include
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+emcc: error: '/home/adxx/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -fopenmp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -o CMakeFiles/cmTC_0567f.dir/OpenMPTryFlag.c.o' failed (returned 1)
+make[1]: *** [CMakeFiles/cmTC_0567f.dir/build.make:66: CMakeFiles/cmTC_0567f.dir/OpenMPTryFlag.c.o] Error 1
+make[1]: Leaving directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0567f/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31f9a/fast && /usr/bin/make -f CMakeFiles/cmTC_31f9a.dir/build.make CMakeFiles/cmTC_31f9a.dir/build
+make[1]: Entering directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31f9a.dir/OpenMPTryFlag.cpp.o
+/home/adxx/emsdk/upstream/emscripten/em++    -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp=libomp -v   -o CMakeFiles/cmTC_31f9a.dir/OpenMPTryFlag.cpp.o -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+ "/home/adxx/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp=libomp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_31f9a.dir/OpenMPTryFlag.cpp.o
+clang version 14.0.0 (https://github.com/llvm/llvm-project 782c0dd1a1c235afb09a34e7da4a1267ead14765)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/adxx/emsdk/upstream/bin
+clang-14: warning: argument unused during compilation: '-static-libstdc++' [-Wunused-command-line-argument]
+ (in-process)
+ "/home/adxx/emsdk/upstream/bin/clang-14" -cc1 -triple wasm32-unknown-emscripten -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -resource-dir /home/adxx/emsdk/upstream/lib/clang/14.0.0 -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=2 -D _LIBCPP_ABI_VERSION=2 -D NDEBUG -isysroot /home/adxx/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/adxx/emsdk/upstream/lib/clang/14.0.0/include -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include -O3 -Werror=implicit-function-declaration -Wall -fdeprecated-macro -fdebug-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fvisibility default -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -vectorize-loops -vectorize-slp -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_31f9a.dir/OpenMPTryFlag.cpp.o -x c++ /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/SDL
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/adxx/emsdk/upstream/lib/clang/14.0.0/include
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+em++: error: '/home/adxx/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp=libomp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_31f9a.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+make[1]: *** [CMakeFiles/cmTC_31f9a.dir/build.make:66: CMakeFiles/cmTC_31f9a.dir/OpenMPTryFlag.cpp.o] Error 1
+make[1]: Leaving directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_31f9a/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_47d19/fast && /usr/bin/make -f CMakeFiles/cmTC_47d19.dir/build.make CMakeFiles/cmTC_47d19.dir/build
+make[1]: Entering directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_47d19.dir/OpenMPTryFlag.cpp.o
+/home/adxx/emsdk/upstream/emscripten/em++    -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp=libiomp5 -v   -o CMakeFiles/cmTC_47d19.dir/OpenMPTryFlag.cpp.o -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+ "/home/adxx/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp=libiomp5 -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_47d19.dir/OpenMPTryFlag.cpp.o
+clang version 14.0.0 (https://github.com/llvm/llvm-project 782c0dd1a1c235afb09a34e7da4a1267ead14765)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/adxx/emsdk/upstream/bin
+clang-14: warning: argument unused during compilation: '-static-libstdc++' [-Wunused-command-line-argument]
+ (in-process)
+ "/home/adxx/emsdk/upstream/bin/clang-14" -cc1 -triple wasm32-unknown-emscripten -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -resource-dir /home/adxx/emsdk/upstream/lib/clang/14.0.0 -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=2 -D _LIBCPP_ABI_VERSION=2 -D NDEBUG -isysroot /home/adxx/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/adxx/emsdk/upstream/lib/clang/14.0.0/include -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include -O3 -Werror=implicit-function-declaration -Wall -fdeprecated-macro -fdebug-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fvisibility default -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -vectorize-loops -vectorize-slp -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_47d19.dir/OpenMPTryFlag.cpp.o -x c++ /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/SDL
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/adxx/emsdk/upstream/lib/clang/14.0.0/include
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+em++: error: '/home/adxx/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp=libiomp5 -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_47d19.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+make[1]: *** [CMakeFiles/cmTC_47d19.dir/build.make:66: CMakeFiles/cmTC_47d19.dir/OpenMPTryFlag.cpp.o] Error 1
+make[1]: Leaving directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_47d19/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08fe9/fast && /usr/bin/make -f CMakeFiles/cmTC_08fe9.dir/build.make CMakeFiles/cmTC_08fe9.dir/build
+make[1]: Entering directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_08fe9.dir/OpenMPTryFlag.cpp.o
+/home/adxx/emsdk/upstream/emscripten/em++    -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp -v   -o CMakeFiles/cmTC_08fe9.dir/OpenMPTryFlag.cpp.o -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+ "/home/adxx/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_08fe9.dir/OpenMPTryFlag.cpp.o
+clang version 14.0.0 (https://github.com/llvm/llvm-project 782c0dd1a1c235afb09a34e7da4a1267ead14765)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/adxx/emsdk/upstream/bin
+clang-14: warning: argument unused during compilation: '-static-libstdc++' [-Wunused-command-line-argument]
+ (in-process)
+ "/home/adxx/emsdk/upstream/bin/clang-14" -cc1 -triple wasm32-unknown-emscripten -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -resource-dir /home/adxx/emsdk/upstream/lib/clang/14.0.0 -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=2 -D _LIBCPP_ABI_VERSION=2 -D NDEBUG -isysroot /home/adxx/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/adxx/emsdk/upstream/lib/clang/14.0.0/include -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include -O3 -Werror=implicit-function-declaration -Wall -fdeprecated-macro -fdebug-compilation-dir=/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fvisibility default -fopenmp -fopenmp-target-new-runtime -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -vectorize-loops -vectorize-slp -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_08fe9.dir/OpenMPTryFlag.cpp.o -x c++ /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/SDL
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/adxx/emsdk/upstream/lib/clang/14.0.0/include
+ /home/adxx/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^~~~~~~
+1 error generated.
+em++: error: '/home/adxx/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -DEMSCRIPTEN -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=2 -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/home/adxx/emsdk/upstream/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -O3 -DNDEBUG -Wall -static-libstdc++ -fopenmp -v -c /home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_08fe9.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+make[1]: *** [CMakeFiles/cmTC_08fe9.dir/build.make:66: CMakeFiles/cmTC_08fe9.dir/OpenMPTryFlag.cpp.o] Error 1
+make[1]: Leaving directory '/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_08fe9/fast] Error 2
+
+
+

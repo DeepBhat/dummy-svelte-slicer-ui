@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/stb"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/stb.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/stb-complete.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-install.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-mkdir.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-download.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-update.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-patch.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-configure.rule"
+		},
+		{
+			"file" : "/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"stb"
+		],
+		"name" : "stb"
+	}
+}

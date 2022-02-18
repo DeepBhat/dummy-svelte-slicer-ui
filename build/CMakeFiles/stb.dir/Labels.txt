@@ -1,0 +1,13 @@
+# Target labels
+ stb
+# Source files and their labels
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/stb
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/stb.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/CMakeFiles/stb-complete.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-install.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-mkdir.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-download.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-update.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-patch.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-configure.rule
+/home/adxx/cura-engine-env/CuraEngine-3.6.0/build/stb-prefix/src/stb-stamp/stb-build.rule
