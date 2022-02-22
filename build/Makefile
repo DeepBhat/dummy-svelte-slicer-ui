@@ -183,7 +183,7 @@ depend:
 
 # Build rule for target.
 CuraEngine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CuraEngine
+	$(MAKE) -f CMakeFiles/Makefile2 CuraEngine -g
 .PHONY : CuraEngine
 
 # fast build rule for target.
