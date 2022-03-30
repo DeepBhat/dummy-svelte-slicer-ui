@@ -1,2 +1,0 @@
-/home/adxx/emsdk/upstream/emscripten/emar qc libclipper.a  CMakeFiles/clipper.dir/libs/clipper/clipper.cpp.o
-/home/adxx/emsdk/upstream/emscripten/emranlib libclipper.a
