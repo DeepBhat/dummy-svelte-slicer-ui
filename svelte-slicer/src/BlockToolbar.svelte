@@ -5,8 +5,6 @@
   import DummyPanel2 from "./panels/dummyPanel2.svelte";
   import DummyPanel3 from "./panels/dummyPanel3.svelte";
 
-  export let name;
-
   const panels = [
     { menu: "dummy", component: DummyPanel },
     { menu: "dummy2", component: DummyPanel2 },
