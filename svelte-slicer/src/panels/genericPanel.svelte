@@ -13,6 +13,7 @@
   // input variables
   let textInput = {};
   let rangeValue = {};
+  let boolValues = {};
 
   function updateSlicer(key, value) {
     $slicerConfigStore.set(key.toLowerCase(), value);
@@ -24,14 +25,30 @@
     <div class="pl-4 pr-4 pt-3">
       <span class="text-overline"> {panelTitle} </span>
       <br />
-      <span> x: {$slicerConfigStore.get('x')} </span>
-      <span> y: {$slicerConfigStore.get('y')} </span>
-      <span> z: {$slicerConfigStore.get('z')} </span>
+      <span> x: {$slicerConfigStore.get("x")} </span>
+      <span> y: {$slicerConfigStore.get("y")} </span>
+      <span> z: {$slicerConfigStore.get("z")} </span>
     </div>
     <div class="inputs">
       {#each inputs[currentIndex] as input}
-        {#if input.type === "checkbox"}
-          <input type="checkbox" name={input.name} />
+        {#if input.type === "checkbox-toggle"}
+          <p>{input.name}</p>
+          <input
+            type="checkbox"
+            name={input.name}
+            bind:checked={boolValues[input.name]}
+            on:input={() => updateSlicer(input.name, boolValues[input.name])}
+          />
+        {:else if input.type === "toggle-text"}
+          {#if boolValues[input.bind]}
+            <p>{input.name}</p>
+            <input
+              type="text"
+              name={input.name}
+              bind:value={textInput[input.name]}
+              on:input={() => updateSlicer(input.name, textInput[input.name])}
+            />
+          {/if}
         {:else if input.type === "text"}
           <p>{input.name}</p>
           <input

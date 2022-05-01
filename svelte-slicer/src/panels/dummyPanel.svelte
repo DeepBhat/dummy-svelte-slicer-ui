@@ -11,8 +11,13 @@
         value: 0,
       },
       {
+        name: "Enable Y",
+        type: "checkbox-toggle",
+      },
+      {
         name: "Y",
-        type: "text",
+        type: "toggle-text",
+        bind: "Enable Y",
       },
       {
         name: "Go to Z",
